@@ -4,8 +4,8 @@ export interface Pin {
     description?: string
     imageUrl: string
     author: {
-        name: string
-        avatar: string
+      name: string
+      avatar: string
     }
     tags: string[]
     likes: number
@@ -13,14 +13,5 @@ export interface Pin {
     createdAt: string
     width: number
     height: number
-}
-
-
-export interface Board {
-    id: string
-    name: string
-    description?: string
-    pins: Pin[]
-    isPrivate: boolean
-    createdAt: string
-}
+  }
+  

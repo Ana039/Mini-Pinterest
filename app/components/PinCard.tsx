@@ -1,6 +1,6 @@
 'use client'
-import { Heart, Download, MoreHorizontal } from 'lucide-react'
-import { Pin } from '@/app/types/pin'
+import { Heart, MoreHorizontal } from 'lucide-react'
+import { Pin } from '@/types/pin'
 import { useState } from 'react'
 
 interface PinCardProps {

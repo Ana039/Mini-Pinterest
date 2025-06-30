@@ -1,5 +1,5 @@
 'use client'
-import { Pin } from '@/app/types/pin'
+import { Pin } from '@/types/pin'
 import PinCard from './PinCard'
 
 interface PinGridProps {
