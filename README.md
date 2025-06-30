@@ -1,8 +1,8 @@
- PinIt – A Pinterest Clone
+PinIt – A Pinterest Clone
 
 A full-stack Pinterest-style application built with a Next.js (TypeScript) frontend and a Django REST Framework backend using PostgreSQL.
 
- Project Structure
+Project Structure
 
 pinit-project/
 ├── frontend/           # Next.js (TypeScript) frontend
@@ -12,7 +12,7 @@ pinit-project/
 ├── manage.py           # Django project manager
 └── README.md
 
- Prerequisites
+Prerequisites
 
 Python 3.x
 
@@ -20,16 +20,18 @@ Node.js & npm
 
 PostgreSQL
 
-⚙️ Backend Setup (Django)
+Backend Setup (Django)
 
 Create and activate a virtual environment:
 
 python3 -m venv venv
 source venv/bin/activate
 
-Install dependencies:
+Install Django and required packages manually:
 
-pip install -r requirements.txt
+pip3 install django djangorestframework psycopg2-binary python-dotenv djangorestframework-simplejwt
+
+If you encounter errors, make sure you're using pip3 and that your virtual environment is activated.
 
 Set up environment variables:
 
@@ -64,7 +66,7 @@ python3 manage.py runserver
 
 Visit: http://localhost:8000/api
 
-🌐 Frontend Setup (Next.js)
+Frontend Setup (Next.js)
 
 Navigate to the frontend directory:
 
@@ -80,7 +82,7 @@ npm run dev
 
 Visit: http://localhost:3000
 
-🔗 API Endpoints
+API Endpoints
 
 Authentication:
 
@@ -104,7 +106,7 @@ PUT /api/pins/{id}/ — Update a pin
 
 DELETE /api/pins/{id}/ — Delete a pin
 
-🚀 Features
+Features
 
 User authentication (register, login, logout)
 
@@ -118,7 +120,7 @@ Keep users logged in with token persistence
 
 Mobile responsive design with Tailwind CSS
 
-⚖️ Technologies Used
+Technologies Used
 
 Frontend
 
@@ -142,7 +144,7 @@ PostgreSQL
 
 Python
 
-📅 Development
+Development
 
 Backend: http://localhost:8000
 
@@ -150,7 +152,7 @@ Admin Panel: http://localhost:8000/admin
 
 Frontend: http://localhost:3000
 
-🚫 Known Issues / To Do
+Known Issues / To Do
 
 Pin image uploads (currently using URLs)
 
@@ -162,8 +164,9 @@ User following system
 
 Pagination or infinite scroll for pins
 
-🚀 Getting Started
+Getting Started
 
 Follow the steps in Backend Setup and Frontend Setup above. Once both servers are running, visit the frontend URL to begin using the app.
 
 Happy Pinning!
+
