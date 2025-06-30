@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import Pin, Category
 
-class PinSerializer(serializers.ModelSerializer):  # Fixed: was PinSeralizer
+class PinSerializer(serializers.ModelSerializer): 
     author_name = serializers.CharField(source='author.username', read_only=True)
     author_avatar = serializers.CharField(source='author.profile.avatar', read_only=True)
     tags_list = serializers.SerializerMethodField()

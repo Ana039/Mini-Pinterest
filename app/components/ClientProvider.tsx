@@ -1,5 +1,5 @@
-// components/ClientProvider.tsx
-'use client'
+
+'use client' // necessary for client-side rendering
 
 import { useEffect } from 'react'
 import { setAuthToken } from '@/lib/api'

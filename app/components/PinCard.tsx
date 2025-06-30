@@ -31,10 +31,10 @@ export default function PinCard({ pin, onClick }: PinCardProps) {
             style={{ aspectRatio: `${pin.width}/${pin.height}` }}
           />
           
-          {/* Overlay on hover */}
+   
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
           
-          {/* Action buttons */}
+         
           <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <button
               onClick={(e) => {
@@ -49,7 +49,7 @@ export default function PinCard({ pin, onClick }: PinCardProps) {
             </button>
           </div>
 
-          {/* Bottom overlay with actions */}
+          
           <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="flex justify-between items-end">
               <div>
@@ -84,7 +84,7 @@ export default function PinCard({ pin, onClick }: PinCardProps) {
         </div>
       </div>
       
-      {/* Author info */}
+      
       <div className="flex items-center mt-2 px-1">
         <img
           src={pin.author.avatar}

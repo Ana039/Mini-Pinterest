@@ -1,4 +1,4 @@
-// hooks/useAuth.ts
+
 import { useState } from 'react'
 import API, { setAuthToken } from '@/lib/api'
 

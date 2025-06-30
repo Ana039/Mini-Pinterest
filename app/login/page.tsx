@@ -23,7 +23,7 @@ export default function LoginPage() {
       localStorage.setItem('authToken', token)
       setAuthToken(token)
 
-      // (Optional) Save user to state or context here
+      // Optionally store user data in local storage or context
       alert(`Welcome back, ${user.username}!`)
       router.push('/')
     } catch (err: any) {
